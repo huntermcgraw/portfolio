@@ -1,8 +1,10 @@
 "use client";
 
-export default function Hero() {
+import Button from "@/components/Button";
+
+export default function Hero() { // min-h-screen = 100% of viewport. h-[50vh] = 50% of viewport height
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 bg-black text-green-400 font-mono">
+    <section className="min-h-screen flex flex-col justify-center items-center px-6 bg-black text-green-400 font-mono">
       <div className="max-w-3xl">
         <p className="text-lg">$ whoami</p>
 
@@ -15,19 +17,9 @@ export default function Hero() {
         </p>
 
         <div className="mt-8 space-x-4">
-          <a
-            href="#projects"
-            className="border border-green-500 px-4 py-2 rounded hover:bg-green-500 hover:text-black transition-colors"
-          >
-            ./projects
-          </a>
-
-          <a
-            href="https://github.com/huntermcgraw"
-            className="border border-green-500 px-4 py-2 rounded hover:bg-green-500 hover:text-black transition-colors"
-          >
-            ./github
-          </a>
+          <Button link="/about" name="./about_me" />
+          <Button link="https://github.com/huntermcgraw" name="./github" />
+          <Button link="https://www.linkedin.com/in/hunter-mcgraw1" name="./linkedin" />
         </div>
 
         <div className="mt-12 text-green-500">
