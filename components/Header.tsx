@@ -4,7 +4,7 @@ import Button from "./Button";
 
 export default function Header() {
     return (
-        <header className="flex items-center justify-between p-4 bg-gray">
+        <header className="flex h-16 items-center justify-between p-2 bg-gray">
             <div className="text-2xl font-bold">Welcome To My Portfolio!</div>
             <nav className="flex space-x-4">
                 <Button link="/" name="Home" />

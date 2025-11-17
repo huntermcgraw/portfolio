@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 
 export default function AboutPage() {
   return (
-    <main>
+    <main className="flex flex-col min-h-screen">
       <Header />
       <About />
     </main>
