@@ -5,54 +5,52 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="flex-1 flex flex-col justify-center items-center px-6 bg-black text-green-400 font-mono">
-      <div className="max-w-3xl">
+    <section className="flex-1 flex flex-col justify-center items-center px-6 bg-white text-gray-900">
+      <div className="max-w-3xl text-center">
+
+        {/* Subtitle */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 0.7, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-lg"
+          transition={{ duration: 0.6 }}
+          className="text-sm uppercase tracking-wider text-gray-600"
         >
-          $ whoami
+          Software Engineer
         </motion.p>
 
+        {/* Name */}
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2 }}
-          className="text-5xl sm:text-6xl font-bold mt-2"
+          transition={{ duration: 0.9, delay: 0.1 }}
+          className="text-5xl sm:text-6xl font-extrabold mt-3"
         >
-          <span className="text-green-300">Hunter McGraw</span>
+          Hunter McGraw
         </motion.h1>
 
+        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 0.8, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-4 text-xl text-green-200"
+          animate={{ opacity: 0.85, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.25 }}
+          className="mt-4 text-lg text-gray-600 leading-relaxed"
         >
-          Full-Stack Developer • Linux Enthusiast • C# / React / Next.js
+          Building clean, modern web experiences with C#, React, and Next.js —
+          and experimenting with machine learning and IoT on the Raspberry Pi.
         </motion.p>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-8 space-x-4"
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-10 flex flex-wrap justify-center gap-4"
         >
-          <Button link="/about" name="./about_me" />
-          <Button link="https://github.com/huntermcgraw" name="./github" />
-          <Button link="https://www.linkedin.com/in/hunter-mcgraw1" name="./linkedin" />
+          <Button link="/about" name="About Me" />
+          <Button link="https://github.com/huntermcgraw" name="GitHub" />
+          <Button link="https://www.linkedin.com/in/hunter-mcgraw1" name="LinkedIn" />
         </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.7 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          className="mt-12 text-green-500"
-        >
-          <span className="opacity-70"># portfolio root directory</span>
-        </motion.div>
+
       </div>
     </section>
   );
