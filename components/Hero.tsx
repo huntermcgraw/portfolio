@@ -6,7 +6,7 @@ import Button from "./Button";
 // --- Main Component: Hero ---
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center py-20 px-4 sm:px-6 bg-gray-950 text-white relative overflow-hidden">
+    <section className="flex-1 flex flex-col justify-center items-center py-20 px-4 sm:px-6 bg-gray-950 text-white relative overflow-hidden">
       
       {/* Inline styles for the animation to ensure it works without global CSS */}
       <style>{`
