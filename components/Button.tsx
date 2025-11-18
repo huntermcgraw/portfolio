@@ -3,13 +3,14 @@
 type ButtonProps = {
     link: string;
     name: string;
+    className?: string;
 };
 
-export default function Button({ link, name }: ButtonProps) {
+export default function Button({ link, name, className }: ButtonProps) {
     return (
         <a
             href={link}
-            className="border border-green-500 px-4 py-2 rounded hover:bg-green-500 hover:text-black transition-colors"
+            className={`${className}`}
         >
             {name}
         </a>
