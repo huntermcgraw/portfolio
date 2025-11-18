@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     const data = await resend.emails.send({
       // "onboarding@resend.dev" is the free testing domain. 
       // It works perfectly for sending emails TO yourself.
-      from: 'Portfolio Contact <onboarding@resend.dev>',
+      from: 'Portfolio Contact Form <contact@huntermcgraw.com>',
       
       // Send it to yourself
       to: [process.env.MY_EMAIL as string], 

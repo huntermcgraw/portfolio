@@ -82,9 +82,9 @@ const handleSubmit = async (e: React.FormEvent) => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-4">
-              <InfoItem icon={<MailIcon />} label="Email" value="hunter@example.com" href="mailto:hunter@example.com" />
-              <InfoItem icon={<LinkedinIcon />} label="LinkedIn" value="linkedin.com/in/hunter" href="https://linkedin.com" />
-              <InfoItem icon={<GithubIcon />} label="GitHub" value="github.com/huntermcgraw" href="https://github.com" />
+              <InfoItem icon={<MailIcon />} label="Email" value="huntercmcgraw@gmail.com" href="mailto:huntercmcgraw@gmail.com" />
+              <InfoItem icon={<LinkedinIcon />} label="LinkedIn" value="linkedin.com/in/hunter-mcgraw1" href="https://www.linkedin.com/in/hunter-mcgraw1" />
+              <InfoItem icon={<GithubIcon />} label="GitHub" value="github.com/huntermcgraw" href="https://github.com/huntermcgraw" />
             </motion.div>
           </div>
 

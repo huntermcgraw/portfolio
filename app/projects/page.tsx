@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   description: 'Learn more about my background and skills.',
 };
 
-export default function AboutPage() {
+export default function ProjectsPage() {
   return (
     <main className="flex flex-col min-h-screen">
       <Header />
-      <About />
+      <Projects />
     </main>
   );
 }
