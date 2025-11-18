@@ -76,17 +76,17 @@ export default function Hero() {
           <Button 
             link="/about" 
             name="About Me" 
-            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
+            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-indigo-800 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
           />
           <Button 
             link="https://github.com/huntermcgraw" 
             name="GitHub" 
-            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-green-600 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
+            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-indigo-800 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
           />
           <Button 
             link="https://www.linkedin.com/in/hunter-mcgraw1" 
             name="LinkedIn" 
-            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-blue-600 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
+            className="text-lg px-8 py-3 bg-indigo-600 hover:bg-indigo-800 text-white shadow-lg shadow-indigo-500/30 transition duration-300"
           />
         </motion.div>
 
