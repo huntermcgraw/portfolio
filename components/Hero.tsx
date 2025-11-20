@@ -55,7 +55,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="text-sm md:text-base uppercase tracking-[0.3em] font-semibold text-indigo-400 mb-4" 
         >
-          Full-Stack Developer
+          Software Engineer
         </motion.p>
 
         <motion.h1
@@ -73,8 +73,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.25 }}
           className="mt-8 text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto"
         >
-          Building <span className="text-gray-100 font-semibold">clean, modern web experiences</span> with C#, React, and Next.js — 
-          and experimenting with machine learning and IoT on the Raspberry Pi.
+          Dedicated to engineering innovative software across the entire stack, bridging the gap between rigorous embedded system design and creative, user-centric web development.
         </motion.p>
 
         <motion.div

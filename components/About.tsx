@@ -20,19 +20,19 @@ export default function About() {
   };
 
   const skills = [
-    "C# / .NET", "React", "Next.js", "TypeScript", 
-    "PostgreSQL", "Tailwind CSS", "IoT / Raspberry Pi", "Git"
+    "Python", "C", "C# / .NET", "React", "Next.js", "TypeScript",
+    "Machine Learning", "Git"
   ];
 
   return (
     <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-gray-950 text-gray-200 relative overflow-hidden">
-      
+
       {/* Optional: Subtle background glow matching Hero */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
 
       <div className="max-w-6xl mx-auto w-full">
-        
-        <motion.div 
+
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -42,7 +42,7 @@ export default function About() {
 
           {/* LEFT COLUMN: The Narrative (Human Side) */}
           <div className="space-y-8">
-            <motion.h2 
+            <motion.h2
               variants={itemVariants}
               className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight"
             >
@@ -51,13 +51,34 @@ export default function About() {
 
             <motion.div variants={itemVariants} className="space-y-6 text-lg text-gray-400 leading-relaxed">
               <p>
-                I'm a software engineer passionate about the intersection of <strong className="text-gray-200">elegant code</strong> and <strong className="text-gray-200">modern design</strong>. 
+                I'm a Software Engineer dedicated to building software that is both fast and beautiful.
               </p>
               <p>
-                My journey started with a curiosity for how things work, leading me to explore the world of IoT. 
-                Today, I leverage that curiosity to build scalable full-stack applications. 
-                While my professional expertise lies in the <span className="text-indigo-400">.NET ecosystem</span> and <span className="text-indigo-400">React</span>, 
-                I dedicate my free time to hacking on hardware projects and experimenting with AI.
+                My work is defined by a love for innovative problem-solving, whether I am crafting creative web applications or diving deep into low-level code.
+                I hold a minor in Computer Engineering and find a unique synergy between these two worlds.
+              </p>
+              <h3 className="text-xl font-bold text-white mb-4">
+                Technical Focus
+              </h3>
+              <ul className="list-disc pl-5 space-y-4">
+                <li>
+                  <strong className="text-indigo-500">Web Development:</strong> I thrive on projects that challenge my creativity, focusing on system design that results in a user-friendly final product.
+                </li>
+                <li>
+                  <strong className="text-indigo-500">Application Development:</strong> Whether it's C# for robust desktop apps or Python for rapid automation, I enjoy the versatility of building software that solves real-world problems efficiently.
+                </li>
+                <li>
+                  <strong className="text-indigo-500">Embedded Systems:</strong> From microcontrollers to SolidWorks CAD, I love the tangible nature of engineering.
+                  I find the rigorous system design required for embedded projects mirrors the architecture needed for great full-stack web development.
+                </li>
+                <li>
+                  <strong className="text-indigo-500">The Workspace:</strong> I am a Linux enthusiast currently running Manjaro with KDE Plasma.
+                </li>
+              </ul>
+              <p>
+                When I'm not coding or tinkering with hardware, you can find me running,
+                cycling, or <del>dominating</del>
+                <span> losing</span> at local trivia nights.
               </p>
             </motion.div>
 
@@ -66,8 +87,8 @@ export default function About() {
               <h3 className="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-4">Tech Stack</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill) => (
-                  <span 
-                    key={skill} 
+                  <span
+                    key={skill}
                     className="px-4 py-2 bg-gray-900 border border-gray-800 rounded-full text-sm text-gray-300 hover:border-indigo-500/50 hover:text-indigo-300 transition-colors cursor-default"
                   >
                     {skill}
@@ -81,10 +102,10 @@ export default function About() {
           <motion.div variants={itemVariants} className="relative group">
             {/* Decorative backdrop behind terminal */}
             <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-            
+
             {/* Terminal Window */}
             <div className="relative bg-gray-900 border border-gray-800 rounded-xl shadow-2xl overflow-hidden">
-              
+
               {/* Terminal Header / Title Bar */}
               <div className="flex items-center px-4 py-3 bg-gray-800/50 border-b border-gray-700">
                 <div className="flex space-x-2">
@@ -103,7 +124,15 @@ export default function About() {
                     <br />
                     &nbsp;&nbsp;<span className="text-red-400">name</span>: <span className="text-green-400">"Hunter McGraw"</span>,
                     <br />
-                    &nbsp;&nbsp;<span className="text-red-400">role</span>: <span className="text-green-400">"Full-Stack Engineer"</span>,
+                    &nbsp;&nbsp;<span className="text-red-400">roles</span>: <span className="text-yellow-300">[</span>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">"Full-Stack Engineer"</span>,
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">"Python Developer"</span>,
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-green-400">"Embedded Systems Engineer"</span>,
+                    <br />
+                    &nbsp;&nbsp;<span className="text-yellow-300">]</span>,
                     <br />
                     &nbsp;&nbsp;<span className="text-red-400">traits</span>: <span className="text-yellow-300">[</span>
                     <br />
@@ -125,7 +154,7 @@ export default function About() {
           </motion.div>
 
         </motion.div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 }
