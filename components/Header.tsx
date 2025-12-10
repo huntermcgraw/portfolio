@@ -27,15 +27,15 @@ export default function Header() {
                 initial={{ y: -100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="fixed top-0 left-0 right-0 z-[100] flex h-20 items-center justify-between px-6 sm:px-12 bg-gray-950/80 backdrop-blur-md border-b border-white/10"
+                className="fixed top-0 left-0 right-0 z-[100] flex h-20 items-center justify-between px-6 sm:px-12 bg-[var(--background)]/80 text-[var(--foreground)] backdrop-blur-md border-b border-gray-900/10 dark:order-white/10"
             >
                 {/* Logo Area */}
                 <Link 
                     href="/" 
-                    className="text-2xl font-bold tracking-tight text-white hover:text-indigo-400 transition-colors relative z-[110]"
+                    className="text-2xl font-bold tracking-tight hover:text-[var(--special)] transition-colors relative z-[110]"
                     onClick={handleLinkClick}
                 >
-                    Hunter<span className="text-indigo-500">.</span>
+                    Hunter<span className="text-[var(--special)]">.</span>
                 </Link>
 
                 {/* Desktop Navigation (Hidden on Mobile) */}
@@ -44,7 +44,7 @@ export default function Header() {
                         <Link 
                             key={link.name}
                             href={link.href} 
-                            className="text-sm font-medium text-gray-300 hover:text-white hover:underline decoration-indigo-500 decoration-2 underline-offset-4 transition-all"
+                            className="text-sm font-medium  hover:text-[var(--foreground)] hover:underline decoration-[var(--special)] decoration-2 underline-offset-4 transition-all"
                         >
                             {link.name}
                         </Link>
@@ -54,7 +54,7 @@ export default function Header() {
                         <Button 
                             link="/contact" 
                             name="Contact" 
-                            className="px-5 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 text-white rounded-full transition-all shadow-lg shadow-indigo-500/20 block"
+                            className="px-5 py-2 text-sm bg-[var(--special)] hover:bg-[var(--special-hover)] text-white rounded-full transition-all shadow-lg shadow-[var(--special-hover)]/20 block"
                         />
                     </div>
                     <div className="ml-2">

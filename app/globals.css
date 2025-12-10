@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*@theme inline {
@@ -17,13 +12,17 @@
 :root {
   --background: theme(--color-white);
   --foreground: theme(--color-gray-900);
-  --card: theme(--color-gray-100);
+  --card: theme(--color-gray-600);
+  --special: theme(--color-gray-900);
+  --special-hover: theme(--color-gray-900/50);
 }
 
 .dark {
   --background: theme(--color-gray-950);
   --foreground: theme(--color-gray-50);
   --card: theme(--color-gray-800);
+  --special: theme(--color-indigo-600);
+  --special-hover: theme(--color-indigo-500/50);
 }
 
 @keyframes move-blob {

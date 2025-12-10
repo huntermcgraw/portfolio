@@ -20,10 +20,10 @@ export default function Projects() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center py-20 bg-gray-950 text-gray-200 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col items-center justify-center py-20 bg-[var(--background)] text-[var(--foreground)] relative overflow-hidden">
       
       {/* Optional: Subtle background glow matching Hero */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="opacity-0 dark:opacity-100 transition-opacity duration-1000 absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
 
       {/* Full width container */}
       <div className="w-full">
@@ -39,12 +39,12 @@ export default function Projects() {
 
           <motion.h2 
             variants={itemVariants}
-            className="text-4xl sm:text-5xl font-extrabold text-indigo-500 tracking-tight"
+            className="text-4xl sm:text-5xl font-extrabold text-[var(--special)] tracking-tight"
           >
             Projects
           </motion.h2>
 
-          <motion.div variants={itemVariants} className="text-lg text-gray-400 leading-relaxed">
+          <motion.div variants={itemVariants} className="text-lg text-[var(--foreground)] leading-relaxed">
             <p>
               Under Development 
             </p>
