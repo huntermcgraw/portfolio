@@ -25,7 +25,7 @@ export default function About() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-gray-950 text-gray-200 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center py-20 px-6 bg-[var(--background)] text-[var(--foreground)] relative overflow-hidden">
 
       {/* Optional: Subtle background glow matching Hero */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
@@ -44,12 +44,12 @@ export default function About() {
           <div className="space-y-8">
             <motion.h2
               variants={itemVariants}
-              className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight"
+              className="text-4xl sm:text-5xl font-extrabold tracking-tight"
             >
               About <span className="text-indigo-500">Me</span>
             </motion.h2>
 
-            <motion.div variants={itemVariants} className="space-y-6 text-lg text-gray-400 leading-relaxed">
+            <motion.div variants={itemVariants} className="space-y-6 text-lg dark:text-gray-400 leading-relaxed">
               <p>
                 I'm a Software Engineer dedicated to building software that is both fast and beautiful.
               </p>

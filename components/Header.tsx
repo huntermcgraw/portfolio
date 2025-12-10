@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import Button from "./Button"; // Ensure this points to your Button component
+import Button from "./Button";
+import ThemeChanger from "./LightDarkToggle";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -55,6 +56,9 @@ export default function Header() {
                             name="Contact" 
                             className="px-5 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 text-white rounded-full transition-all shadow-lg shadow-indigo-500/20 block"
                         />
+                    </div>
+                    <div className="ml-2">
+                        <ThemeChanger />
                     </div>
                 </nav>
 
